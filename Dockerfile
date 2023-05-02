@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk-jammy 
 
-ARG MC_VERSION=1.19.6
+ARG MC_VERSION=1.19
 ARG MEM_LIMIT=7G
 ARG USER=minecraft-docker
 ARG GROUP=minecraft-docker
