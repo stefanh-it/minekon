@@ -26,7 +26,7 @@ WORKDIR /minecraft
 RUN mkdir -p ${WORLD_DIR} ${PLUGIN_DIR} 
 
 RUN wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar \
-    && java -jar BuildTools.jar --rev $MC_VERSION
+    && java -jar BuildTools.jar --rev $MC_VERSION \
     && echo "eula=${EULA}" > eula.txt
 
 RUN apt-get remove -y git wget \
