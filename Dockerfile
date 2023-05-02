@@ -17,7 +17,7 @@ ENV PLUGIN_DIR=$PLUGIN_DIR
 ENV WORLD_DIR=$WORLD_DIR
 
 RUN apt-get update \
-    && apt-get -y git wget gosu
+    && apt-get install  -y git wget gosu
 
 VOLUME ${WORLD_DIR}
 VOLUME ${PLUGIN_DIR}
